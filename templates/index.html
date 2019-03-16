@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Information Submit</title>
+</head>
+<body>
+    <h3>数院抢讲座Bot(((o(*ﾟ▽ﾟ*)o))) (小范围使用! 勿外传!!) by IceFires</h3>
+<form action="" method="POST">
+    {{ form.name.label }}{{ form.name }}
+    {{ form.idnum.label }}{{ form.idnum }}
+    {{ form.url.label }}{{ form.url }}
+    {{ form.submit }}
+    <br>
+</form>
+<br>
+<h3>已提交的请求</h3>
+<table border="1">
+    {% for info in infos %}
+        <tr>
+            <td>{{ info['name'] }}</td>
+            <td>{{ info['idnum'] }}</td>
+            <td>{{ info['url'] }}</td>
+            <td>{{ info['time'] }}</td>
+            <td>{{ info['status'] }}</td>
+        </tr>
+    {% endfor %}
+</table>
+</body>
+</html>
