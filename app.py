@@ -41,6 +41,9 @@ def index():
 
     with open(back_log) as f:
         infos = json.load(f)
+    for info in infos:
+        info['name'] = info['name'][0] + '*' * (len(info['name']) - 1)
+        info['idnum'] = info['idnum'][0] + '*' * 7 + info['idnum'][-2:]
 
     form = InfoForm(meta={'csrf': False})
     return flask.render_template('index.html', form=form, infos=infos)

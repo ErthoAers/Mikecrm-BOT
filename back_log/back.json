@@ -1,16 +1,1 @@
-[
-    {
-        "name": "姓名",
-        "idnum": "学号",
-        "url": "链接",
-        "time": "时间",
-        "status": "状态"
-    },
-    {
-        "name": "a",
-        "idnum": "a",
-        "url": "http://tk5rrvu0xdnrh3el.mikecrm.com/53fbM3p",
-        "time": "2019-03-16 17:03:00",
-        "status": "success"
-    }
-]
+[{"name": "\u59d3\u540d", "idnum": "\u5b66\u53f7", "url": "\u94fe\u63a5", "time": "\u65f6\u95f4", "status": "\u72b6\u6001"}, {"name": "\u9648\u6d77\u5929", "idnum": "3150104457", "url": "http://mathlecture.mikecrm.com/Wik1flN", "time": "2019-03-21 17:00:00", "status": "success"}, {"name": "\u9648\u6d77\u5929", "idnum": "3150104457", "url": "http://mathlecture.mikecrm.com/6blCsRk", "time": "2019-03-21 17:00:00", "status": "success"}]
