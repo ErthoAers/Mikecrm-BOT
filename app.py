@@ -41,7 +41,7 @@ def index():
 
     with open(back_log) as f:
         infos = json.load(f)
-    for info in infos:
+    for info in infos[1:]:
         info['name'] = info['name'][0] + '*' * (len(info['name']) - 1)
         info['idnum'] = info['idnum'][0] + '*' * 7 + info['idnum'][-2:]
 
