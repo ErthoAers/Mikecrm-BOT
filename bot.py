@@ -119,7 +119,7 @@ if __name__ == '__main__':
     _id = opt.id
     
     t = datetime.strptime(get_time(url), "%Y-%m-%d %H:%M:%S")
-    t = t + timedelta(seconds=random.randint(0, 7))
+    t = t + timedelta(seconds=random.randint(2, 5))
     scheduler = BlockingScheduler()
     scheduler.add_job(post_request, args=[url, name, _id], run_date=t)
     scheduler.start()
